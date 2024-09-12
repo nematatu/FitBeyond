@@ -1,0 +1,264 @@
+/* 全体で共通のCSSはこのファイルに記述する */
+body {
+  background: linear-gradient(to right, #f8f0f5, #fce4ec);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* お好みでフォントを追加 */
+}
+
+
+
+input {
+  height: 30px;
+}
+
+.main.container{
+  margin-top: 30px;
+}
+
+.custom-color{
+  background-color: #FFC0D7;
+}
+
+.custom-color2{
+  background-color: #F9858B !important;
+}
+
+
+
+
+.custom-segment {
+    background-color: rgba(255, 255, 255, 0.8); /* 背景色に透明感を追加 */
+    border: 1px solid #e0e0e0; /* 微妙なグレーボーダー */
+    border-radius: 15px; /* 角を丸める */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 柔らかい影を追加 */
+    padding: 20px; /* 内側に余白を追加 */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* マウスホバー時のアニメーション */
+}
+
+.custom-segment:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* ホバー時に影を強調 */
+    transform: translateY(-5px); /* ホバー時に少し持ち上げる */
+}
+
+.custom-segment input {
+    border: 1px solid #ddd; /* 入力フィールドに薄いボーダー */
+    border-radius: 8px; /* 入力フィールドの角も丸める */
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.custom-segment label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #555; /* ラベルの色を少し落ち着いた色に */
+}
+
+
+
+
+.custom-container {
+  padding: 30px;
+}
+
+.custom-card {
+  border-radius: 15px; /* カードの角を丸める */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* カードに影を追加 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* アニメーション */
+}
+
+.custom-card:hover {
+  transform: translateY(-10px); /* ホバー時にカードが浮き上がる */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* ホバー時に影を強調 */
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* 画像のサイズ調整 */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px; /* 画像の角も丸める */
+  
+}
+
+.custom-content {
+  padding: 20px;
+  background-color: #FFC0D7 !important;
+}
+
+.custom-header {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333; /* タイトルの色を少し濃く */
+}
+
+
+.custom-content .description {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.custom-content a {
+  color: #ff85a1; /* Zoomリンクの色 */
+  font-weight: bold;
+}
+
+.custom-content a:hover {
+  text-decoration: underline;
+}
+
+
+.custom-tag {
+  display: inline-block;
+	margin: 0 .1em .6em 0;
+	padding: .6em;
+	line-height: 1;
+	text-decoration: none;
+	color: #f09199;
+	background-color: #fff;
+	border: 1px solid #f09199;
+	border-left: 5px solid #f09199;
+}
+
+
+.custom-text{
+  letter-spacing:0.07em;
+  line-height: 2em;
+}
+
+.custom-text a {
+  background-color: #2d8cff;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 0.875rem;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s, transform 0.2s; /* アニメーション効果を追加 */
+  
+  display: block;
+  text-align: center; /* aタグを中央揃え */
+  margin: 10px auto; /* 任意で上下マージンを追加 */
+}
+
+.custom-text a:hover {
+  background-color: #1a6ed8; /* ホバー時の背景色を変更 */
+  transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+.tore {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tore h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/*footer*/
+
+a {
+  color: #999;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer {
+  padding: 2rem;
+  font-size: 15px;
+  color: #999;
+  background: #fff;
+  border-top: 1px solid #e5e7eb;
+}
+
+.footer a:hover {
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .md-flex {
+    display: flex;
+  }
+
+  .md-flex li + li {
+    margin-left: 16px;
+  }
+}
+
+
+
+
+
+
+        .logbody {
+            
+            font-family: Arial, sans-serif;
+            color: #ff6b6b;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 2px solid #ffc0cb;
+            border-radius: 25px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        input::placeholder {
+            color: #ffb6c1;
+        }
+        input:focus {
+            outline: none;
+            border-color: #ff69b4;
+            box-shadow: 0 0 5px rgba(255, 192, 203, 0.5);
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 25px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+        .signup-field {
+            margin-bottom: 30px;
+        }
